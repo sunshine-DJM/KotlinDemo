@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    tools:context="com.wd.tech.activity.RegisteredActivity">
+
+    <EditText
+        android:id="@+id/registered_phone"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:hint="账号"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:theme="@style/MyEditText" />
+
+    <EditText
+        android:id="@+id/registered_nickName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="昵称"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:theme="@style/MyEditText"
+        android:layout_below="@id/registered_phone"/>
+
+    <EditText
+        android:id="@+id/registered_Pwd"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registered_nickName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#fff"
+        android:hint="密码"
+        android:textColorHint="#fff"
+        android:theme="@style/MyEditText" />
+
+    <TextView
+        android:id="@+id/registered_dl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registered_Pwd"
+        android:layout_alignRight="@id/registered_Pwd"
+        android:text="登录"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/registered_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registered_Pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#03A9F4"
+        android:text="注册"
+        android:textColor="#fff" />
+
+</RelativeLayout>
